@@ -5,22 +5,26 @@ import styled from 'styled-components';
 import { tabItems } from './tabbed_data.js';
 
 /* Components ---------------------------*/
-import TabbedContent from './TabbedContent.jsx';
 import TabbedNav from './TabbedNav.jsx';
+import TabbedContent from './TabbedContent.jsx';
 
 const Tabbed = () => {
+   
+    const [ chosenTab, chosenTabUpdate ] = useState(tabItems[0]);
 
-    
-    const [ chosenTab, chosenTabUpdate ] =useState(tabItems[0]);
-
-    const changeTabs = () => {
-        chosenTabUpdate(tabItems[1])
+    const changeTabs = (tabItem) => {
+        chosenTabUpdate(tabItem)
     }
 
     return (
         <TabbedStyled className='Tabbed'>
+            <TabbedNav
+                changeTabs={ changeTabs }
+                tabItems={ tabItems }
+                chosenTab={ chosenTab }
+            />
             <TabbedContent chosenTab={ chosenTab } />
-            <TabbedNav changeTabs={ changeTabs } />
+            
         </TabbedStyled>
     );
 }
