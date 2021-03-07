@@ -3,7 +3,7 @@ import React from 'react';
 /* Components ---------------------------*/
 // import Slideshow from './Slideshow.jsx';
 import Tabbed from './Tabbed/Tabbed.jsx';
-import Services from './Services.jsx';
+import Services from './Services/Services.jsx';
 import Clients from './Clients.jsx';
 import Testimonials from './Testimonials.jsx';
 
@@ -18,8 +18,10 @@ const Home = () => {
             <div className="nested">
                 <Tabbed />
             </div>
-            
-            <Services />
+            <div className="nested">
+                <Services />
+            </div>
+    
             <Clients />
             <Testimonials />
 

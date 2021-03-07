@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,14 +11,27 @@ import Nav from './Nav.jsx';
 
 const NavMobile = () => {
 
+    const [showMobileMenu, showMobileMenuUpdate] = useState(false);
+
+    const handleHamburgerToggle = () => {
+        showMobileMenuUpdate(!showMobileMenu);
+    }
+
     return (
         <NavMobileStyled className='NavMobile'>
-            <div className="hamburger">
+            <div
+                className="hamburger"
+                onClick={ handleHamburgerToggle }
+            >
                 <FontAwesomeIcon icon={ faBars } />
             </div>
-            <div className="nav-wrapper">
-                <Nav />
+
+            {
+                showMobileMenu &&
+                <div className="nav-wrapper">
+                    <Nav />
             </div>
+            }
         </NavMobileStyled>
     );
 }
@@ -40,6 +53,8 @@ const NavMobileStyled = styled.div`
 
         text-align: center;
         padding: 9px;
+        
+        cursor: pointer;
 
         svg {
             font-size: 30px;
@@ -76,7 +91,7 @@ const NavMobileStyled = styled.div`
             color: white;
         }
         &:hover {
-            color: #5B5FA1;
+            color: white;
             background-color: #c3c5f0;
         }
     }

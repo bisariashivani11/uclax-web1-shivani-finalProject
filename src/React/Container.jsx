@@ -27,7 +27,6 @@ const Container = () => {
                     ? <NavMobile />
                     : <NavLarge />
                 }
-               
                 <Main />
                 <Footer />
             </ContainerStyled>
