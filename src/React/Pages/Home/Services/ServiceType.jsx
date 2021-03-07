@@ -24,7 +24,6 @@ const ServiceTypeStyled = styled.div`
 
     margin: 10px;
     width: 200px;
-    justify-content: center;
 
     /* width: 10%; */
  
