@@ -33,10 +33,11 @@ const TabbedNavItemStyled = styled.div`
     color: #a7a4a4;
     line-height: 50px;
     display: inline-block;
-    width: 300px;
+    width: 200px;
     text-align: center;
     margin-right: 17px;
-    font-size: 24px;
+    margin-bottom: 17px;
+    font-size: 18px;
     cursor: pointer;
 
     border: 1px solid #333232;
