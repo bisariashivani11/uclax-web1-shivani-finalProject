@@ -2,10 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { 
+    faBars,
+} from '@fortawesome/free-solid-svg-icons';
+
+
 const Nav = () => {
 
     return (
         <NavStyled className="Nav">
+            <FontAwesomeIcon icon={ faBars } />
+
             <NavLink to="/" exact>Home</NavLink>
             <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/about">About</NavLink>
@@ -19,7 +27,6 @@ export default Nav;
 
 const NavStyled = styled.nav`
     a {
-        background-color: #fff;
         color: grey;
         text-decoration: none;
 

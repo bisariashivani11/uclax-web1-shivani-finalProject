@@ -14,7 +14,11 @@ const Home = () => {
             <h1>Home</h1>
 
             {/* <Slideshow /> */}
-            <Tabbed />
+
+            <div className="nested">
+                <Tabbed />
+            </div>
+            
             <Services />
             <Clients />
             <Testimonials />

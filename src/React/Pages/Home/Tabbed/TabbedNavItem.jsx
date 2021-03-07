@@ -39,8 +39,8 @@ const TabbedNavItemStyled = styled.div`
     font-size: 24px;
     cursor: pointer;
 
-    background-color: white;
     border: 1px solid #333232;
+    border-radius: 10px;
 
     &.active {
         color:white;
@@ -50,9 +50,7 @@ const TabbedNavItemStyled = styled.div`
     }
 
     &:hover {
-        color: #3a3939;
-        border: 0px;
-        border: 1px solid #333232;
+        font-weight: bold;
         
     }
     
