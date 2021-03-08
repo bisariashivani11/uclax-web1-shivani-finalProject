@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Light = () => {
-
+const Light = ({children}) => {
     return (
         <LightStyled className='Light'>
-            Light 
+            { children }
         </LightStyled>
     );
 }
@@ -13,5 +12,7 @@ const Light = () => {
 export default Light;
 
 const LightStyled = styled.div`
+    background-color: white;
+    padding: 20px;
     
 `;
