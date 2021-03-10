@@ -5,8 +5,6 @@ import classnames from 'classnames';
 
 const TabbedNavItem = ({tabItem, changeTabs, chosenTab}) => {
 
-    console.log('tabItem', tabItem.title, chosenTab.title);
-
     const handleTabClick = () => {
         changeTabs(tabItem);
     }
@@ -33,7 +31,7 @@ const TabbedNavItemStyled = styled.div`
     color: #a7a4a4;
     line-height: 50px;
     display: inline-block;
-    width: 200px;
+    width: 150px;
     text-align: center;
     margin-right: 17px;
     margin-bottom: 17px;

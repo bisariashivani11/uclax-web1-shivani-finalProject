@@ -29,5 +29,6 @@ const TabbedNav = ({changeTabs, tabItems, chosenTab}) => {
 export default TabbedNav;
 
 const TabbedNavStyled = styled.div`
+    text-align: right;
     
 `;

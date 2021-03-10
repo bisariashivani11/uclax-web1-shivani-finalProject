@@ -76,6 +76,7 @@ const NavMobileStyled = styled.div`
 
     .Nav {
         margin-top: 70px;
+       
 
     }
     a {

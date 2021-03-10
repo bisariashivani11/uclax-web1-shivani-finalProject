@@ -25,5 +25,5 @@ const FieldGroup = ({id, theFields, handleFieldUpdate}) => {
 export default FieldGroup;
 
 const FieldGroupStyled = styled.div`
-    
+    margin-bottom: 20px;
 `;

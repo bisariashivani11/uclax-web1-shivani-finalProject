@@ -4,14 +4,14 @@ import React from 'react';
 // import Slideshow from './Slideshow.jsx';
 import Tabbed from './Tabbed/Tabbed.jsx';
 import Services from './Services/Services.jsx';
+import MidSection from './MidSection.jsx';
 import Clients from './Clients.jsx';
-import Testimonials from './Testimonials.jsx';
+import Testimonials from './Testimonials/Testimonials.jsx';
 
 const Home = () => {
 
     return (
         <div className='Home'>
-            <h1>Home</h1>
 
             {/* <Slideshow /> */}
 
@@ -21,7 +21,8 @@ const Home = () => {
             <div className="nested">
                 <Services />
             </div>
-    
+
+            <MidSection />
             <Clients />
             <Testimonials />
 

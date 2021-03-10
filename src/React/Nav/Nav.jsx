@@ -18,6 +18,5 @@ const Nav = () => {
 export default Nav;
 
 const NavStyled = styled.nav`
-   
 
 `;

@@ -5,8 +5,9 @@ import styled from 'styled-components';
 import { tabItems } from './tabbed_data.js';
 
 /* Components ---------------------------*/
-import TabbedNav from './TabbedNav.jsx';
 import TabbedContent from './TabbedContent.jsx';
+import TabbedNav from './TabbedNav.jsx';
+
 
 const Tabbed = () => {
    
@@ -18,12 +19,12 @@ const Tabbed = () => {
 
     return (
         <TabbedStyled className='Tabbed'>
+            <TabbedContent chosenTab={ chosenTab } />
             <TabbedNav
                 changeTabs={ changeTabs }
                 tabItems={ tabItems }
                 chosenTab={ chosenTab }
             />
-            <TabbedContent chosenTab={ chosenTab } />
             
         </TabbedStyled>
     );

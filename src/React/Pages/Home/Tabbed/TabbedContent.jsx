@@ -15,7 +15,6 @@ const TabbedContent = ({chosenTab}) => {
                 <img src={ chosenTab.image } alt='Tab Vision' />
             </div>
             <div className="right">
-         
                 <div dangerouslySetInnerHTML={ { __html: chosenTab.text } } />
             </div>
         </TabbedContentStyled>

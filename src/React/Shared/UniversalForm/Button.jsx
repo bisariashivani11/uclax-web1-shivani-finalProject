@@ -12,6 +12,14 @@ const Button = () => {
 
 export default Button;
 
-const ButtonStyled = styled.div`
+const ButtonStyled = styled.button`
+
+    background-color: #807aca;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+
+    border-radius: 5px;
+    border: solid 3px #c4c4c4;
     
 `;

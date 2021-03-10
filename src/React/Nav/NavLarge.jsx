@@ -17,9 +17,8 @@ export default NavLarge;
 
 const NavLargeStyled = styled.div`
 
-   display: flex;
-   padding: 20px;
-
+display: flex;
+padding: 20px;
 
     .Nav {
         display: flex;
