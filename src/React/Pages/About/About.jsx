@@ -31,8 +31,6 @@ export default About;
 const AboutStyled = styled.div`
     padding: 25px;
     margin-bottom: 0px;
-   
-
 
     .members {
         display: flex;

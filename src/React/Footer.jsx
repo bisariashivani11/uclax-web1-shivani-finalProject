@@ -1,15 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-/* Scripts ---------------------------*/
-import { mq } from '../common/media_queries.js';
-
 const Footer = () => {
 
     return (
         <FooterStyled className='Footer'>
             <div className='footer'>
-                <img src='/assets/img/Footer/footer image.png' alt='Footer'/>
+                <img src='/assets/img/Footer/footer1.png' alt='Footer'/>
                 <p>©2020.SJ Architects.All Rights Reserved.</p>
             </div>
         </FooterStyled>
