@@ -5,7 +5,7 @@ import React from 'react';
 import Tabbed from './Tabbed/Tabbed.jsx';
 import Services from './Services/Services.jsx';
 import MidSection from './MidSection.jsx';
-import Clients from './Clients.jsx';
+import Client from './Client.jsx';
 import Testimonials from './Testimonials/Testimonials.jsx';
 
 const Home = () => {
@@ -21,9 +21,9 @@ const Home = () => {
             <div className="nested">
                 <Services />
             </div>
-
+           
             <MidSection />
-            <Clients />
+            <Client />
             <Testimonials />
 
         </div>

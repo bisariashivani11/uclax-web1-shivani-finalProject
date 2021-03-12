@@ -18,16 +18,19 @@ export default MidSection;
 
 const MidSectionStyled = styled.div`
 
-width: 100%;
+    margin-top: 100px;
+    img {
+                width: 100%;
+            }
 
-@media ${mq.tablet} {
-    display: block;
-    justify-content: center;
-}
+    @media ${mq.tablet} {
+        display: block;
+        justify-content: center;
+    }
 
-@media ${mq.desktop} {
-    display: flex;
-    justify-content: center;
-}
+    @media ${mq.desktop} {
+        display: flex;
+        justify-content: center;
+    }
 
 `;

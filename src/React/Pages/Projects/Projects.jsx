@@ -15,8 +15,7 @@ const Projects = () => {
     // console.log('catChosen', catChosen);
 
     return (
-        <div> 
-            <h1>Projects</h1>
+        <div>
             <TopSection />
             <FilterNav
                 projects={ projects }

@@ -6,7 +6,7 @@ export const servicesType = [
     },
     {
         image: '/assets/img/Home/Services/services2.png',
-        name: 'Architectural Work',
+        name: 'Architectural Work & Construction',
         description: 'We design for beauty and economy simultaneously, working creatively with our clients and trusted team of consultants on new construction and remodels.'
     },
     {

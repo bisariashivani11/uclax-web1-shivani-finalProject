@@ -34,6 +34,10 @@ const ServicesStyled = styled.div`
     padding: 25px;
     margin: 50px 10px;
 
+    h1 {
+        text-align: center;
+    }
+
     .stypes {
         display: flex;
         flex-wrap: wrap;

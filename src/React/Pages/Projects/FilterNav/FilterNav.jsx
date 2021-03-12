@@ -6,8 +6,6 @@ import FilterNavButton from './FilterNavButton.jsx';
 
 const FilterNav = ({ projects, catChosen, catChosenUpdate }) => {
 
-    console.log('FilterNav projects', projects, catChosen);
-
     return (
         <FilterNavStyled className='FilterNav'>
             {
@@ -29,6 +27,8 @@ export default FilterNav;
 const FilterNavStyled = styled.div`
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    text-align: right;
     
 `;

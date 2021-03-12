@@ -40,7 +40,7 @@ const ContainerStyled = styled.div`
     background-color: white;
 
     @media ${mq.tablet} {
-        background-color: #FFF0FB;
+        background-color: #fff;
     }
 
     @media ${mq.desktop} {

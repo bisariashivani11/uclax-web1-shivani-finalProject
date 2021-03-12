@@ -7,10 +7,22 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 
-const Light = ({children}) => {
+const Light = ({onHide, width, children}) => {
+
+    const handleStopProp =(event) => {
+        event.stopPropagation();
+    }
     return (
-        <LightStyled className='Light'>
-            <button className='close'>
+        <LightStyled
+            className='Light'
+            onClick={ handleStopProp }
+            width={ width }
+        >
+
+            <button 
+                className='close'
+                onClick={ onHide }
+            >
                 <FontAwesomeIcon icon={ faTimes } />
             </button>
             { children }
@@ -31,7 +43,7 @@ const LightStyled = styled.div`
 
     transform: translate(-50%, -50%);
 
-    width: 500px;
+    width: ${({width}) => width};
 
     button.close {
         background-color: #fff;

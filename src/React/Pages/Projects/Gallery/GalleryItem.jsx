@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
+/* Scripts ---------------------------*/
+import { mq } from '../../../../common/media_queries.js';
 
 /* Components ---------------------------*/ 
 import Lightbox from '../../../Shared/Lightbox/Lightbox.jsx';
@@ -45,35 +47,59 @@ const GalleryItem = ({ item }) => {
 export default GalleryItem;
 
 const GalleryItemStyled = styled.div`
+
     position: relative;
-    margin: 10px;
+    margin-bottom: 60px;
+    padding: 5px;
+    display: flex;
 
     .piece { 
-        h2.galleryH2 {
-            position: absolute;
-            bottom: 0px; left:0px; right:0px;
-            background-color: #fff;
-            margin: 0px;
-            padding: 5px;
-        }
-
-        h3.galleryH3 {
+            max-width: 100%;
+            height: auto;
+        
+            img {
+            width: 100%;
+            }
+            
+        h2 {
             position: absolute;
             bottom: 0px; left: 0px; right: 0px;
-            text-align: right;
-            margin: 0px;
+            background-color: #fff;
+            margin: 0x;
             padding: 5px;
+            
         }
 
-        h4.galleryH4 {
+        h3 {
             position: absolute;
-            top: 0px; left:0px; right:0px;
-            text-align: right;
-            background-color: #fff;
+            bottom: -10px; left: 0px; right: 0px;
             margin: 0px;
             padding: 5px;
+            background-color: #fff;
+        
         }
-    }
+
+        h4 {
+            position: absolute;
+            top: 0px; left:0px; right:0px;
+            margin: 0px;
+            padding: 5px;
+            background-color: #fff;
+            text-align: right;
+            }
+        }
+
+        @media ${mq.tablet} {
+            .piece {
+                text-align: center;
+            }
+        }
+
+        @media ${mq.desktop} {
+            .piece {
+                text-align: left;
+            }
+        }
 
     .Lightbox {
         h2 {

@@ -23,13 +23,12 @@ const TestimonialEachStyled = styled.div`
     display: flex;
     max-width: 100%;
     padding: 5px;
-    justify-content: center;
+    text-align: left;
 
     .wrapper {
         background-color: #F5F4FF;
         margin: 15px;
         padding: 15px;
-
         
     }
 
