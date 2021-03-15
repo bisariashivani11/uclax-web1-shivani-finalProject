@@ -29,4 +29,5 @@ export default SunAndMoon;
 
 const SunAndMoonStyled = styled.div`
     margin-top: 200px;
+    margin-bottom: 0px;
 `;

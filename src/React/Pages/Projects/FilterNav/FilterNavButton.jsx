@@ -26,19 +26,35 @@ const FilterNavButton = ({ category, catChosen, catChosenUpdate }) => {
 export default FilterNavButton;
 
 const FilterNavButtonStyled = styled.div`
-    button {
+ button {
+        color: #3a3838;
+        line-height: 50px;
         display: inline-block;
         width: 150px;
-        background-color: white;
-        padding: 10px 0px;
+        background-color: #F7E5DE;
+        
         margin: 0px 10px;
+        text-align: center;
+  
+        font-size: 18px;
+        cursor: pointer;
+        border: 1px solid #333232;
+        border-radius: 10px;
     }
 
     &.active {
-        button { 
-        background-color: #8f91c5;
-        color: #fff;
+        button {
+            color:white;
+            background-color: #5B5FA1;
+            border: 0px;
 
         }
+    }
+    
+    &:hover {
+        button {
+            font-weight: bold;
+        }
+        
     }
 `;

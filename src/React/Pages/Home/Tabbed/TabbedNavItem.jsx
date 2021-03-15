@@ -28,10 +28,11 @@ export default TabbedNavItem;
 
 const TabbedNavItemStyled = styled.div`
     
-    color: #a7a4a4;
+    color: #3a3838;
     line-height: 50px;
     display: inline-block;
     width: 150px;
+    background-color: #F7E5DE;
     text-align: center;
     margin-right: 17px;
     margin-bottom: 17px;

@@ -24,15 +24,15 @@ const GalleryItem = ({ item }) => {
         <GalleryItemStyled className='GalleryItem'>
             <div className='piece' onClick={ handleOnShow }>
                 <img src={ item.image } alt={ item.title }/>
-                <h2>{ item.title }</h2>
-                <h3>{ item.place }</h3>
-                <h4>{ item.category }</h4>
+                <h3>{ item.title }</h3>
+                <h4>{ item.place }</h4>
+                <h5>{ item.category }</h5>
             </div>
 
             <Lightbox
                 show={ showLightbox }
                 onHide={ handleOnHide }
-                width='500px'
+                width='410px'
             >
                 <img src={ item.image } alt={ item.title }/>
                 <h2>{ item.title }</h2>
@@ -56,12 +56,13 @@ const GalleryItemStyled = styled.div`
     .piece { 
             max-width: 100%;
             height: auto;
+            margin-bottom: 10px;
         
             img {
             width: 100%;
             }
             
-        h2 {
+        h3 {
             position: absolute;
             bottom: 0px; left: 0px; right: 0px;
             background-color: #fff;
@@ -70,7 +71,7 @@ const GalleryItemStyled = styled.div`
             
         }
 
-        h3 {
+        h4 {
             position: absolute;
             bottom: -10px; left: 0px; right: 0px;
             margin: 0px;
@@ -79,7 +80,7 @@ const GalleryItemStyled = styled.div`
         
         }
 
-        h4 {
+        h5 {
             position: absolute;
             top: 0px; left:0px; right:0px;
             margin: 0px;

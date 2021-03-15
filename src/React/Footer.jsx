@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <FooterStyled className='Footer'>
             <div className='footer'>
-                <img src='/assets/img/Footer/footer1.png' alt='Footer'/>
+                <img src='/assets/img/Footer/footer2.png' alt='Footer'/>
                 <p>©2020.SJ Architects.All Rights Reserved.</p>
             </div>
         </FooterStyled>

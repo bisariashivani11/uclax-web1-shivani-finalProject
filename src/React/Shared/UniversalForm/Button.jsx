@@ -17,12 +17,17 @@ export default Button;
 
 const ButtonStyled = styled.button`
 
-    background-color: #807aca;
-    color: white;
+    color:white;
+    background-color: #5B5FA1;
     padding: 10px 20px;
     font-size: 18px;
+    cursor: pointer;
 
-    border-radius: 5px;
-    border: solid 3px #c4c4c4;
+    border: 0px;
+    border-radius: 10px;
     
+    &:hover {
+        font-weight: bold;
+        
+    }
 `;

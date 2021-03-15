@@ -11,6 +11,7 @@ const ContactForm = () => {
 
     return (
         <ContactFormStyled className='ContactForm'>
+            
             <UniversalForm
                 fields={ contactFields }
                 apiURL='/email/send'

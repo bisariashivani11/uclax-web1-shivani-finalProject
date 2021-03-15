@@ -21,6 +21,6 @@ export default Login;
 const LoginStyled = styled.div`
 
 text-align: center;
-margin-bottom: 0px;
+margin-bottom: 150px;
     
-`;
+`

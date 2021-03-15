@@ -25,14 +25,15 @@ const StudioStyled = styled.div`
 
     .team {
         margin-top: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 200px;
+        margin-top: 150px;
         text-align: center;
     }
 
     .left {
         max-width: 100%;
         height: auto;
-        margin: 10px;
+        text-align: center;
 
     
     }

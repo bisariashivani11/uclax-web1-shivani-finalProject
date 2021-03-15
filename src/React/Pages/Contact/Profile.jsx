@@ -18,6 +18,8 @@ const ProfileStyled = styled.div`
     
     background-color: #e4cfcc;
     padding: 40px;
+    text-align: center;
+    justify-content: center;
 
     h3 {
         padding: 20px;
