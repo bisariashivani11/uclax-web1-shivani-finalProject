@@ -30,6 +30,7 @@ const ContactStyled = styled.div`
 justify-content: center;
 text-align: center;
 margin-top: 100px;
+
 line-height: 30px;
 margin-bottom: 200px;
 
@@ -40,7 +41,9 @@ margin-bottom: 200px;
 
     }
     .right {
+        text-align: left;
         flex: 3;
+        margin-left: 0px;
         
     }
     

@@ -17,7 +17,7 @@ export default Profile;
 const ProfileStyled = styled.div`
     
     background-color: #e4cfcc;
-    padding: 100px;
+    padding: 40px;
 
     h3 {
         padding: 20px;
