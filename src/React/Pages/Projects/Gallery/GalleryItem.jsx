@@ -12,7 +12,6 @@ const GalleryItem = ({ item }) => {
     const [showLightbox, showLightboxUpdate] = useState(false);
 
     const handleOnHide = () => {
-        console.log('Closing Lightbox');
         showLightboxUpdate(false);
     }
 
@@ -33,11 +32,12 @@ const GalleryItem = ({ item }) => {
             <Lightbox
                 show={ showLightbox }
                 onHide={ handleOnHide }
+                width='500px'
             >
                 <img src={ item.image } alt={ item.title }/>
                 <h2>{ item.title }</h2>
                 <h3>{ item.place }</h3>
-                <h4>{ item.category }</h4>
+            
             </Lightbox>
 
         </GalleryItemStyled>
@@ -92,6 +92,7 @@ const GalleryItemStyled = styled.div`
         @media ${mq.tablet} {
             .piece {
                 text-align: center;
+                max-width: 100%;
             }
         }
 
@@ -102,12 +103,18 @@ const GalleryItemStyled = styled.div`
         }
 
     .Lightbox {
+
         h2 {
             background-color: #5B5FA1;
             color: white;
             padding: 10px;
             margin: 0px;
         }
+
+        h3 {
+            margin-left: 15px;
+        }
+
     }
     
 `;

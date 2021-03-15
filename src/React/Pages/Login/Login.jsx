@@ -1,18 +1,26 @@
 import React from 'react';
+import styled from 'styled-components';
 
 /* Components ---------------------------*/
-import LoginForm from './LoginForm.jsx';
 import SunAndMoon from './SunAndMoon.jsx';
+import LoginForm from './LoginForm.jsx';
 
 const Login = () => {
 
     return (
-        <div>
-            <h1>Login</h1>
-            <LoginForm />
+        <LoginStyled className='Login'>
+
             <SunAndMoon />
-        </div>
+            <LoginForm />
+        </LoginStyled>
     );
 }
 
 export default Login;
+
+const LoginStyled = styled.div`
+
+text-align: center;
+margin-bottom: 0px;
+    
+`;

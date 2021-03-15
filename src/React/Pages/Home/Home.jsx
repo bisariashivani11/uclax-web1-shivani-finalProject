@@ -6,6 +6,7 @@ import Tabbed from './Tabbed/Tabbed.jsx';
 import Services from './Services/Services.jsx';
 import MidSection from './MidSection.jsx';
 import Client from './Client.jsx';
+import Video from './Youtube/Video.jsx';
 import Testimonials from './Testimonials/Testimonials.jsx';
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
            
             <MidSection />
             <Client />
+            <Video />   
             <Testimonials />
 
         </div>

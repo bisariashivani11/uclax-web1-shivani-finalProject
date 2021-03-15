@@ -15,7 +15,6 @@ const SunAndMoon = () => {
 
     return (
         <SunAndMoonStyled className='SunAndMoon'>
-            <h2>The Sun and the Moon</h2>
             <img
                 src={ imageSrc }
                 alt='The Sun And Moon'
@@ -29,5 +28,5 @@ const SunAndMoon = () => {
 export default SunAndMoon;
 
 const SunAndMoonStyled = styled.div`
-    
+    margin-top: 200px;
 `;
