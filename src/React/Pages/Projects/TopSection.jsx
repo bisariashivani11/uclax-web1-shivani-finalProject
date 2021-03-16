@@ -5,7 +5,9 @@ const TopSection = () => {
 
     return (
         <TopSectionStyled className='TopSection'>
-            <h1>dhjd</h1>
+             <div className='Top'>
+                <img src='/assets/img/Projects/TopSection/ProjectTop.png' alt='Project Interior'/>
+            </div>
         </TopSectionStyled>
     );
 }
@@ -13,11 +15,13 @@ const TopSection = () => {
 export default TopSection;
 
 const TopSectionStyled = styled.div`
+    position: relative;
 
     height: 300px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
 
-    background-image: url('/assets/img/Projects/TopSection/ProjectTop.png');
-    background-position: center center;
-    background-size: cover;
 
 `;
+

@@ -56,7 +56,7 @@ const GalleryItemStyled = styled.div`
     .piece { 
             max-width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         
             img {
             width: 100%;
